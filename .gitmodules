@@ -1,6 +1,8 @@
-[submodule "ccpp-framework"]
+[submodule "ccpp/framework"]
 	path = ccpp/framework
-	url = https://github.com/fanqi203/ccpp-framework
-[submodule "ccpp-physics"]
-	path = ccpp/physics
-	url = https://github.com/fanqi203/ccpp-physics
+	url = https://github.com/fanqi203/ccpp-framework.git
+	branch = bao_sa
+[submodule "ccpp/ccpp/physics"]
+	path = ccpp/ccpp/physics
+	url = https://github.com/fanqi203/ccpp-physics.git
+	branch = bao_sa
