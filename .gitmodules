@@ -3,6 +3,6 @@
 	url = https://github.com/fanqi203/ccpp-framework.git
 	branch = bao_sa
 [submodule "ccpp/physics"]
-	path = ccpp/ccpp/physics
+	path = ccpp/physics
 	url = https://github.com/fanqi203/ccpp-physics.git
 	branch = bao_sa
