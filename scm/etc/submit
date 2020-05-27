@@ -1,19 +1,20 @@
 #!/bin/bash
 #SBATCH -J test
 #SBATCH -A dtc-hwrf
-#SBATCH --time=30
+#SBATCH --time=60
+#SBATCH -p service
 #SBATCH -n 1
 #SBATCH -o test.out
 #SBATCH -e test.err
-#SBATCH -q batch
+#SBATCH -q windfall
 #SBATCH --mail-user=Shaowu.Bao@noaa.gov
 #SBATCH --mail-type="FAIL"
 #SBATCH --mem=512M
 #SBATCH -D../bin
 
 cd  ..
-rm -fr bin
-mkdir bin
+#rm -fr bin
+#mkdir bin
 cd bin
 source ~/.bashrc
 source ../etc/Hera_setup_intel.sh
@@ -26,4 +27,3 @@ module load ncl
 ./run_gmtb_scm.py -c mycase
 ncl var_out.ncl
 mv psuadeApps_ct.out.* /home/Shaowu.Bao/nggps_hub/psuade
-
