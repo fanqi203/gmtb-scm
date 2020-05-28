@@ -4160,8 +4160,8 @@ module GFS_typedefs
     Diag%topfsw%upfxc = zero
     Diag%topfsw%dnfxc = zero
     Diag%topfsw%upfx0 = zero
-    Diag%topflw%upfxc = zero
-    Diag%topflw%upfx0 = zero
+!    Diag%topflw%upfxc = zero
+!    Diag%topflw%upfx0 = zero
     if (Model%ldiag3d) then
       Diag%cldcov     = zero
     endif
